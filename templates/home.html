@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - Company Name{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Our Company</h1>
+        <p>We provide innovative solutions for your business needs</p>
+        <a href="{{ url_for('products') }}" class="btn">Explore Products</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Our Core Features</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>Quality</h3>
+            <p>We deliver high-quality products that exceed expectations</p>
+        </div>
+        <div class="feature-card">
+            <h3>Innovation</h3>
+            <p>Pushing boundaries with cutting-edge technology</p>
+        </div>
+        <div class="feature-card">
+            <h3>Support</h3>
+            <p>24/7 customer support to help you succeed</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join thousands of satisfied customers today</p>
+    <a href="#" class="btn">Contact Us</a>
+</section>
+{% endblock %} 
