@@ -1,37 +1,37 @@
 {% extends "layout.html" %}
 
-{% block title %}Home - Company Name{% endblock %}
+{% block title %}ホーム - Company Name{% endblock %}
 
 {% block content %}
 <section class="hero">
     <div class="hero-content">
-        <h1>Welcome to Our Company</h1>
-        <p>We provide innovative solutions for your business needs</p>
-        <a href="{{ url_for('products') }}" class="btn">Explore Products</a>
+        <h1>シンドラーコンサルティング合同会社の経営理念は、人工知能を活用し、人々の知的才能と生産性を向上させることです。その実現に向け、以下のサービスを提供しております。</h1>
+        <p>人工知能システムの受託開発<br>生成型人工知能専用ハードウェアの導入支援<br>人工知能人材および企業の移住と合併や買収に関するコンサルティング</p>
+        <a href="{{ url_for('products') }}" class="btn">製品を探る</a>
     </div>
 </section>
 
 <section class="features">
-    <h2>Our Core Features</h2>
+    <h2>当社の技術的優位性は以下のとおりです。</h2>
     <div class="feature-grid">
         <div class="feature-card">
-            <h3>Quality</h3>
-            <p>We deliver high-quality products that exceed expectations</p>
+            <h3>日本語化モデルの専門開発ノウハウ</h3>
+            <p>日本語に特化した大規模言語モデルの設計と構築から運用まで、一貫した技術基盤を保有</p>
         </div>
         <div class="feature-card">
-            <h3>Innovation</h3>
-            <p>Pushing boundaries with cutting-edge technology</p>
+            <h3>分散と並列処理によるスケーラビリティ</h3>
+            <p>異なるデバイス上でモジュールごとの並列推論が可能。リソースを最適活用し、大規模処理にも対応。</p>
         </div>
         <div class="feature-card">
-            <h3>Support</h3>
-            <p>24/7 customer support to help you succeed</p>
+            <h3>高い解釈性とデバッグ性</h3>
+            <p>モジュール単位でモデル構造を可視化と切り分けられるため、原因究明や改良サイクルを迅速化</p>
         </div>
     </div>
 </section>
 
 <section class="cta">
-    <h2>Ready to Get Started?</h2>
-    <p>Join thousands of satisfied customers today</p>
-    <a href="#" class="btn">Contact Us</a>
+    <h2>始める準備はできましたか？</h2>
+    <p>当社はスタートアップのコンサルティング会社であり、プロジェクトの選定、調査、開発、実装などの専門アドバイスを提供する、深い専門知識と経験豊富なアドバイザーのチームで構成されています。</p>
+    <a href="#" class="btn">お問い合わせ</a>
 </section>
-{% endblock %} 
+{% endblock %}        
