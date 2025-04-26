@@ -1,40 +1,67 @@
 {% extends "layout.html" %}
 
-{% block title %}創設者 - Company Name{% endblock %}
+{% block title %}創設者 - Schindler-JP{% endblock %}
 
 {% block content %}
-<section class="founder-hero">
-    <div class="founder-profile">
+<section class="founder-header">
+    <h1 style="text-align: center; font-size: 2.5rem;">創設者チーム</h1>
+    <p style="text-align: center; font-size: 1.3rem;">革新と卓越性への情熱を持つ専門家チーム</p>
+</section>
+
+<section class="founders-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem auto; max-width: 1200px;">
+    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
         <div class="founder-image">
             <!-- Placeholder for founder image -->
-            <div class="image-placeholder"></div>
+            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
         </div>
         <div class="founder-info">
-            <h1>ジョン・ドウ</h1>
-            <p class="founder-title">創設者 & CEO</p>
+            <h2 style="font-size: 2rem;">John Zhang</h2>
+            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & ロボティクス専門家</p>
+            <p style="font-size: 1.1rem;">名古屋大学卒業。ロボティクスと人工知能の専門家であり、10年以上の経験を持つ。</p>
+        </div>
+    </div>
+
+    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+        <div class="founder-image">
+            <!-- Placeholder for founder image -->
+            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+        </div>
+        <div class="founder-info">
+            <h2 style="font-size: 2rem;">Eric Zhang</h2>
+            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & シニアITコンサルタント</p>
+            <p style="font-size: 1.1rem;">名古屋大学卒業。豊富な知識と経験を持つシニアITコンサルタント。</p>
+        </div>
+    </div>
+
+    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+        <div class="founder-image">
+            <!-- Placeholder for founder image -->
+            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+        </div>
+        <div class="founder-info">
+            <h2 style="font-size: 2rem;">Ligong Zheng</h2>
+            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者</p>
+            <p style="font-size: 1.1rem;">愛知産業大学卒業。技術とビジネスの両面に精通したエキスパート。</p>
+        </div>
+    </div>
+
+    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+        <div class="founder-image">
+            <!-- Placeholder for founder image -->
+            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+        </div>
+        <div class="founder-info">
+            <h2 style="font-size: 2rem;">Hualiang Lee</h2>
+            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & 法律顧問</p>
+            <p style="font-size: 1.1rem;">北京大学卒業。経験豊富な弁護士として法的側面からチームをサポート。</p>
         </div>
     </div>
 </section>
 
-<section class="founder-story">
-    <h2>私たちの物語</h2>
-    <div class="story-content">
-        <p>
-            ジョン・ドウは2010年に業界に革命をもたらすというビジョンを持って私たちの会社を設立しました。テクノロジー分野で15年間働いた後、より良いソリューションを生み出す機会を見出しました。
-        </p>
-        <p>
-            彼のリーダーシップのもと、当社は小さなスタートアップから複数の国にオフィスを持つ業界のリーダーへと成長しました。イノベーションと顧客満足への情熱が当社の成功を継続的に推進しています。
-        </p>
-        <p>
-            ジョンはMITからコンピュータサイエンスの修士号を取得しており、テクノロジーとビジネスへの貢献により数々の業界賞を受賞しています。
-        </p>
-    </div>
-</section>
-
-<section class="founder-vision">
-    <h2>ビジョンとミッション</h2>
-    <blockquote>
-        「当社のミッションは、人々の生活に変化をもたらす製品を創造することです。私たちは革新し、卓越し、お客様に優れた価値を提供するよう努めています。」
+<section class="founder-vision" style="text-align: center; margin: 3rem auto; max-width: 900px; padding: 0 1rem;">
+    <h2 style="font-size: 2rem;">ビジョンとミッション</h2>
+    <blockquote style="font-size: 1.3rem; font-style: italic; line-height: 1.6;">
+        「当社のミッションは、革新的な技術で人々の生活と企業の未来を変革することです。私たちは、専門知識と情熱を結集し、お客様に最高の価値を提供します。」
     </blockquote>
 </section>
 {% endblock %}        
