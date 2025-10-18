@@ -1,0 +1,68 @@
+<svg width="600" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="600" height="450" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="300" y="40" font-family="Arial" font-size="22" text-anchor="middle" fill="#0073aa" font-weight="bold">生成AI（ローカルLLM）専用モデル統合システム</text>
+  <text x="300" y="70" font-family="Arial" font-size="18" text-anchor="middle" fill="#555">プレミアムプラン - 拡張システム構成</text>
+  
+  <!-- AI核心 - 升级版 -->
+  <rect x="220" y="120" width="160" height="90" rx="10" ry="10" fill="#0073aa" stroke="#005580" stroke-width="2"/>
+  <text x="300" y="155" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">拡張ローカルLLM</text>
+  <text x="300" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="white">高度AIエンジン</text>
+  <text x="300" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="white">業種別チューニング</text>
+  
+  <!-- 用户界面 - 升级版 -->
+  <rect x="70" y="120" width="120" height="90" rx="10" ry="10" fill="#46b450" stroke="#339933" stroke-width="2"/>
+  <text x="130" y="155" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">高度UI</text>
+  <text x="130" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="white">高機能インタフェース</text>
+  <text x="130" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="white">カスタム設定</text>
+  
+  <!-- API - 升级版 -->
+  <rect x="410" y="120" width="120" height="90" rx="10" ry="10" fill="#ff9e2c" stroke="#e67e00" stroke-width="2"/>
+  <text x="470" y="155" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">拡張API接続</text>
+  <text x="470" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="white">多システム連携</text>
+  <text x="470" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="white">自動ワークフロー</text>
+  
+  <!-- 数据库 - 升级版 -->
+  <rect x="220" y="240" width="160" height="90" rx="10" ry="10" fill="#00a0d2" stroke="#0073aa" stroke-width="2"/>
+  <text x="300" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">高性能データベース</text>
+  <text x="300" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">大容量データ処理</text>
+  <text x="300" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="white">効率的なデータ抽出</text>
+  
+  <!-- 新增功能：分析引擎 -->
+  <rect x="70" y="240" width="120" height="90" rx="10" ry="10" fill="#9c27b0" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="130" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">分析エンジン</text>
+  <text x="130" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">品質分析</text>
+  <text x="130" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="white">改善提案</text>
+  
+  <!-- 新增功能：専門サポート -->
+  <rect x="410" y="240" width="120" height="90" rx="10" ry="10" fill="#e53935" stroke="#c62828" stroke-width="2"/>
+  <text x="470" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">専門サポート</text>
+  <text x="470" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">専任担当者</text>
+  <text x="470" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="white">迅速な技術対応</text>
+  
+  <!-- 连接线 - 核心连接 -->
+  <line x1="190" y1="165" x2="220" y2="165" stroke="#666" stroke-width="2"/>
+  <line x1="380" y1="165" x2="410" y2="165" stroke="#666" stroke-width="2"/>
+  <line x1="300" y1="210" x2="300" y2="240" stroke="#666" stroke-width="2"/>
+  
+  <!-- 连接线 - 新增连接 -->
+  <line x1="130" y1="210" x2="130" y2="240" stroke="#666" stroke-width="2"/>
+  <line x1="470" y1="210" x2="470" y2="240" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="285" x2="220" y2="285" stroke="#666" stroke-width="2"/>
+  <line x1="380" y1="285" x2="410" y2="285" stroke="#666" stroke-width="2"/>
+  
+  <!-- 註釋 -->
+  <text x="300" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="#555" font-style="italic">* プレミアムプランでは、高度なAIモデル、多機能連携、専門サポートを提供</text>
+  <text x="300" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#555" font-style="italic">* お客様の業界や業務に合わせたカスタマイズが可能</text>
+  
+  <!-- 箭头 -->
+  <polygon points="218,165 210,160 210,170" fill="#666"/>
+  <polygon points="408,165 400,160 400,170" fill="#666"/>
+  <polygon points="300,238 295,230 305,230" fill="#666"/>
+  <polygon points="130,238 125,230 135,230" fill="#666"/>
+  <polygon points="470,238 465,230 475,230" fill="#666"/>
+  <polygon points="218,285 210,280 210,290" fill="#666"/>
+  <polygon points="408,285 400,280 400,290" fill="#666"/>
+</svg> 

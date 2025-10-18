@@ -1,0 +1,15 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="250" height="250" fill="#f0f0f0" rx="10" ry="10"/>
+  
+  <!-- 头部轮廓 -->
+  <circle cx="125" cy="105" r="55" fill="#e0e0e0" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- 头部和肩膀简化轮廓 -->
+  <ellipse cx="125" cy="230" rx="75" ry="40" fill="#e0e0e0" stroke="#cccccc" stroke-width="2"/>
+  <path d="M70,105 L70,190 Q125,230 180,190 L180,105" fill="#e0e0e0" stroke="#cccccc" stroke-width="2"/>
+  
+  <!-- 占位符文本 -->
+  <text x="125" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#888888">プロフィール画像</text>
+  <text x="125" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#888888">準備中</text>
+</svg> 

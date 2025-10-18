@@ -5,65 +5,76 @@
 {% block content %}
 <section class="products-header">
     <h1>当社の製品</h1>
-    <p>あなたのニーズを満たすために設計された革新的なソリューション群をご覧ください</p>
+    <p>お客様のニーズに合わせた革新的なAIソリューション</p>
 </section>
 
 <section class="product-list">
     <div class="product-card">
         <div class="product-image">
-            <!-- Placeholder for product image -->
-            <div class="image-placeholder"></div>
+            <!-- 使用新创建的SVG图片 -->
+            <img src="{{ url_for('static', filename='image/ai_system_standard.svg') }}" alt="スタンダードプラン システム図" class="product-img">
         </div>
         <div class="product-details">
-            <h2>製品1</h2>
-            <p class="product-description">リアルタイムのモニタリングとレポート機能を備えたビジネスアナリティクスの包括的なソリューション。</p>
+            <h2>生成AI（ローカルLLM）専用モデル統合UI・APIシステム<br>（スタンダードプラン）</h2>
+            <p class="product-description">
+                お客様の業種や業務に合わせた生成AIシステムの基本プラン。ローカルLLMを活用した安全で効率的な資料生成ツール。
+            </p>
+            <h3>ITツール概要</h3>
+            <p>本システムは、AI（ローカルLLM）を使って資料を生成するツールです。業界に限られていないですが、現時点、劇団、出版社、物流会社などに利用されたケースや利用したい問い合わせがあります。</p>
+            
+            <h4>主な機能と活用例</h4>
             <ul class="product-features">
-                <li>機能1: リアルタイムデータ分析</li>
-                <li>機能2: カスタムダッシュボード作成</li>
-                <li>機能3: 自動レポート作成</li>
+                <li><strong>劇団向け:</strong> キーワード入力とキャラクター設定を行うだけで、シナリオを自動生成。脚本作成業務を大幅に効率化。シナリオのオンライン編集も可能。</li>
+                <li><strong>出版社向け:</strong> キーワードと資料の用途設定で、データベースから特定のページを抽出し、資料を自動生成。資料作成業務を効率化。オンライン編集も可能。</li>
+                <li><strong>物流会社向け:</strong> キーワードと用途設定で、データベースから特定データを抽出し、申告書を自動生成。申告システムへの自動入力も可能。</li>
             </ul>
-            <a href="#" class="btn">詳細を見る</a>
+            <h4>ご利用方法</h4>
+            <ol class="product-usage">
+                <li>URLや「localhost:80」というアドレスにアクセスし、ログイン</li>
+                <li>キーワードと設定項目を入力</li>
+                <li>「G」や「再生成」ボタンをクリックし、資料自動生成</li>
+                <li>生成された資料をダウンロードまたはオンライン編集</li>
+                <li>完成した資料を保存・自動入力</li>
+            </ol>
+            <a href="#" class="wp-button">詳細を見る</a>
         </div>
     </div>
 
     <div class="product-card">
         <div class="product-image">
-            <!-- Placeholder for product image -->
-            <div class="image-placeholder"></div>
+            <!-- 使用新创建的SVG图片 -->
+            <img src="{{ url_for('static', filename='image/ai_system_premium.svg') }}" alt="プレミアムプラン システム図" class="product-img">
         </div>
         <div class="product-details">
-            <h2>製品2</h2>
-            <p class="product-description">高度な暗号化と既存システムとのシームレスな統合を備えた安全なクラウドストレージソリューション。</p>
+            <h2>生成AI（ローカルLLM）専用モデル統合UI・APIシステム<br>（プレミアムプラン）</h2>
+            <p class="product-description">
+                スタンダードプランのすべての機能に加え、より高度なカスタマイズ、大容量データ処理、専用サポートを提供する上位プラン。
+            </p>
+            <h3>プレミアムプランの特長</h3>
             <ul class="product-features">
-                <li>機能1: エンドツーエンドの暗号化</li>
-                <li>機能2: 無制限のストレージオプション</li>
-                <li>機能3: クロスプラットフォームアクセシビリティ</li>
+                <li><strong>専用モデルチューニング:</strong> お客様の業界や業務に特化したAIモデルの微調整</li>
+                <li><strong>高度データ連携:</strong> 既存システムとの高度な連携機能と自動化ワークフロー</li>
+                <li><strong>優先サポート:</strong> 専任サポート担当者と迅速な技術対応</li>
+                <li><strong>高度分析機能:</strong> 生成された資料の品質分析と改善提案機能</li>
+                <li><strong>大容量処理:</strong> より大規模なデータセットの処理と複雑な資料生成</li>
             </ul>
-            <a href="#" class="btn">詳細を見る</a>
-        </div>
-    </div>
-
-    <div class="product-card">
-        <div class="product-image">
-            <!-- Placeholder for product image -->
-            <div class="image-placeholder"></div>
-        </div>
-        <div class="product-details">
-            <h2>製品3</h2>
-            <p class="product-description">ユーザー体験を向上させ、応答時間を短縮するAI搭載の顧客サービスプラットフォーム。</p>
-            <ul class="product-features">
-                <li>機能1: AIチャットボット統合</li>
-                <li>機能2: 顧客行動分析</li>
-                <li>機能3: オムニチャネルサポート</li>
-            </ul>
-            <a href="#" class="btn">詳細を見る</a>
+            <a href="#" class="wp-button">詳細を見る</a>
         </div>
     </div>
 </section>
 
+<section class="system-structure">
+    <h2>システム基本構成</h2>
+    <div class="structure-diagram">
+        <!-- 使用標準版系統圖作為基本構成 -->
+        <img src="{{ url_for('static', filename='image/ai_system_standard.svg') }}" alt="システム基本構成図" class="structure-img">
+    </div>
+    <p class="structure-note">詳細な技術仕様については、お問い合わせください。</p>
+</section>
+
 <section class="product-cta">
     <h2>カスタムソリューションが必要ですか？</h2>
-    <p>当社の製品をお客様の特定の要件に合わせる方法についてチームにお問い合わせください</p>
-    <a href="#" class="btn">営業にお問い合わせ</a>
+    <p>お客様の特定のニーズに合わせたAIソリューションを提供します。</p>
+    <a href="mailto:ai@schindler-jp.com" class="wp-button">お問い合わせ</a>
 </section>
 {% endblock %}            

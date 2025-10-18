@@ -4,28 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}フラスクウェブサイト{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Schindler-JP</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="{{ url_for('home') }}">ホーム</a></li>
-                <li><a href="{{ url_for('founder') }}">創設者</a></li>
-                <li><a href="{{ url_for('products') }}">製品</a></li>
-            </ul>
-        </nav>
+<body class="wp-style-body">
+    <header class="wp-header">
+        <div class="wp-container">
+            <nav class="wp-nav">
+                <div class="logo">
+                    <h1>Schindler-JP</h1>
+                </div>
+                <ul class="wp-nav-links">
+                    <li><a href="{{ url_for('home') }}">ホーム</a></li>
+                    <li><a href="{{ url_for('founder') }}">創設者</a></li>
+                    <li><a href="{{ url_for('products') }}">製品</a></li>
+                    <li><a href="{{ url_for('news') }}">ニュース</a></li>
+                </ul>
+                <div class="wp-mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        {% block content %}{% endblock %}
+    <main class="wp-main">
+        <div class="wp-container">
+            {% block content %}{% endblock %}
+        </div>
     </main>
     
-    <footer>
-        <p>&copy; 2024 Schindler-JP. 全著作権所有。</p>
+    <footer class="wp-footer">
+        <div class="wp-container">
+            <div class="wp-footer-content">
+                <div class="wp-footer-company">
+                    <h3>Schindler-JP</h3>
+                    <p>革新的な技術で未来を創造する</p>
+                </div>
+                <div class="wp-footer-links">
+                    <h4>クイックリンク</h4>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">ホーム</a></li>
+                        <li><a href="{{ url_for('founder') }}">創設者</a></li>
+                        <li><a href="{{ url_for('products') }}">製品</a></li>
+                        <li><a href="{{ url_for('news') }}">ニュース</a></li>
+                    </ul>
+                </div>
+                <div class="wp-footer-contact">
+                    <h4>お問い合わせ</h4>
+                    <p><i class="fas fa-phone"></i> 080-3672-6579</p>
+                    <p><i class="fas fa-envelope"></i> ai@schindler-jp.com</p>
+                </div>
+            </div>
+            <div class="wp-footer-bottom">
+                <p>&copy; 2024 Schindler-JP. 全著作権所有。</p>
+            </div>
+        </div>
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

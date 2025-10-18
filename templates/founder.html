@@ -4,63 +4,87 @@
 
 {% block content %}
 <section class="founder-header">
-    <h1 style="text-align: center; font-size: 2.5rem;">創設者チーム</h1>
-    <p style="text-align: center; font-size: 1.3rem;">革新と卓越性への情熱を持つ専門家チーム</p>
+    <h1>創設者チーム</h1>
+    <p>革新と卓越性への情熱を持つ専門家チーム</p>
 </section>
 
-<section class="founders-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem auto; max-width: 1200px;">
-    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+<section class="founders-grid">
+    <div class="founder-card">
         <div class="founder-image">
-            <!-- Placeholder for founder image -->
-            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+            <!-- 使用新创建的SVG头像 -->
+            <img src="{{ url_for('static', filename='image/team_placeholder.svg') }}" alt="John Zhang" class="founder-img">
         </div>
         <div class="founder-info">
-            <h2 style="font-size: 2rem;">John Zhang</h2>
-            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & ロボティクス専門家</p>
-            <p style="font-size: 1.1rem;">名古屋大学卒業。ロボティクスと人工知能の専門家であり、10年以上の経験を持つ。</p>
+            <h2>John Zhang</h2>
+            <p class="founder-title">共同創設者 & ロボティクス専門家</p>
+            <p>名古屋大学卒業。ロボティクスと人工知能の専門家であり、10年以上の経験を持つ。</p>
         </div>
     </div>
 
-    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+    <div class="founder-card">
         <div class="founder-image">
-            <!-- Placeholder for founder image -->
-            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+            <!-- 使用新创建的SVG头像 -->
+            <img src="{{ url_for('static', filename='image/team_placeholder.svg') }}" alt="Eric Zhang" class="founder-img">
         </div>
         <div class="founder-info">
-            <h2 style="font-size: 2rem;">Eric Zhang</h2>
-            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & シニアITコンサルタント</p>
-            <p style="font-size: 1.1rem;">名古屋大学卒業。豊富な知識と経験を持つシニアITコンサルタント。</p>
+            <h2>Eric Zhang</h2>
+            <p class="founder-title">共同創設者 & シニアITコンサルタント</p>
+            <p>名古屋大学卒業。豊富な知識と経験を持つシニアITコンサルタント。</p>
         </div>
     </div>
 
-    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+    <div class="founder-card">
         <div class="founder-image">
-            <!-- Placeholder for founder image -->
-            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+            <!-- 使用新创建的SVG头像 -->
+            <img src="{{ url_for('static', filename='image/team_placeholder.svg') }}" alt="Ligong Zheng" class="founder-img">
         </div>
         <div class="founder-info">
-            <h2 style="font-size: 2rem;">Ligong Zheng</h2>
-            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者</p>
-            <p style="font-size: 1.1rem;">愛知産業大学卒業。技術とビジネスの両面に精通したエキスパート。</p>
+            <h2>Ligong Zheng</h2>
+            <p class="founder-title">社長</p>
+            <p>愛知産業大学卒業。技術とビジネスの両面に精通したエキスパート。</p>
+            <p class="contact-info">
+                <span><i class="fas fa-phone"></i></span>
+                <a href="tel:08036726579">080-3672-6579</a>
+            </p>
         </div>
     </div>
 
-    <div class="founder-card" style="text-align: center; width: 45%; min-width: 300px; margin-bottom: 2rem;">
+    <div class="founder-card">
         <div class="founder-image">
-            <!-- Placeholder for founder image -->
-            <div class="image-placeholder" style="height: 200px; background-color: #f0f0f0; margin-bottom: 1rem;"></div>
+            <!-- 使用新创建的SVG头像 -->
+            <img src="{{ url_for('static', filename='image/team_placeholder.svg') }}" alt="Hualiang Lee" class="founder-img">
         </div>
         <div class="founder-info">
-            <h2 style="font-size: 2rem;">Hualiang Lee</h2>
-            <p class="founder-title" style="font-size: 1.2rem; font-weight: bold;">共同創設者 & 法律顧問</p>
-            <p style="font-size: 1.1rem;">北京大学卒業。経験豊富な弁護士として法的側面からチームをサポート。</p>
+            <h2>Hualiang Lee</h2>
+            <p class="founder-title">共同創設者 & 法律顧問</p>
+            <p>北京大学卒業。経験豊富な弁護士として法的側面からチームをサポート。</p>
         </div>
     </div>
 </section>
 
-<section class="founder-vision" style="text-align: center; margin: 3rem auto; max-width: 900px; padding: 0 1rem;">
-    <h2 style="font-size: 2rem;">ビジョンとミッション</h2>
-    <blockquote style="font-size: 1.3rem; font-style: italic; line-height: 1.6;">
+<!-- Technical Support Team Section -->
+<section class="support-team">
+    <h1>技術サポートチーム</h1>
+    <p>専門知識と革新的なソリューションで私たちをサポート</p>
+    
+    <div style="display: flex; justify-content: center; margin: 2rem auto;">
+        <div class="team-member-card">
+            <div class="member-image">
+                <!-- 使用新创建的SVG头像 -->
+                <img src="{{ url_for('static', filename='image/team_placeholder.svg') }}" alt="Steven Lin" class="member-img">
+            </div>
+            <div class="member-info">
+                <h2>Steven Lin</h2>
+                <p class="member-title">技術サポート スペシャリスト</p>
+                <p>豊富な技術知識と問題解決能力を持ち、チームの技術面をサポート。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="founder-vision">
+    <h2>ビジョンとミッション</h2>
+    <blockquote>
         「当社のミッションは、革新的な技術で人々の生活と企業の未来を変革することです。私たちは、専門知識と情熱を結集し、お客様に最高の価値を提供します。」
     </blockquote>
 </section>

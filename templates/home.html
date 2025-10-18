@@ -3,35 +3,216 @@
 {% block title %}ホーム - Schindler-JP{% endblock %}
 
 {% block content %}
-<section class="hero">
-    <div class="hero-content">
-        <h1>シンドラーコンサルティング合同会社の経営理念は、人工知能を活用し、人々の知的才能と生産性を向上させることです。その実現に向け、以下のサービスを提供しております。</h1>
-        <p>人工知能システムの受託開発<br>生成型人工知能専用ハードウェアの導入支援<br>人工知能人材および企業の移住と合併や買収に関するコンサルティング</p>
-        <a href="{{ url_for('products') }}" class="btn">製品を探る</a>
-    </div>
-</section>
-
-<section class="features">
-    <h2>当社の技術的優位性は以下のとおりです。</h2>
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3>日本語化モデルの専門開発ノウハウ</h3>
-            <p>日本語に特化した大規模言語モデルの設計と構築から運用まで、一貫した技術基盤を保有</p>
+<!-- SAP风格顶部新闻栏 -->
+<section class="sap-news-banner">
+    <div class="news-wrapper">
+        <div class="news-badge">新着情報</div>
+        <div class="news-slider">
+            <div class="news-item active">最新の研究: マルチモーダルAIモデルが複雑な画像認識タスクで95%の精度を達成</div>
+            <div class="news-item">日本語特化型LLMがビジネス文書作成タスクで人間レベルの品質を実現</div>
+            <div class="news-item">企業のAI導入率が前年比40%増加、生産性向上が主な要因</div>
+            <div class="news-item">日本政府、AIガバナンスに関する新ガイドラインを発表</div>
         </div>
-        <div class="feature-card">
-            <h3>分散と並列処理によるスケーラビリティ</h3>
-            <p>異なるデバイス上でモジュールごとの並列推論が可能。リソースを最適活用し、大規模処理にも対応。</p>
-        </div>
-        <div class="feature-card">
-            <h3>高い解釈性とデバッグ性</h3>
-            <p>モジュール単位でモデル構造を可視化と切り分けられるため、原因究明や改良サイクルを迅速化</p>
+        <div class="news-controls">
+            <button class="news-nav-btn" id="newsPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="news-nav-btn" id="newsNext"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
 </section>
 
-<section class="cta">
-    <h2>始める準備はできましたか？</h2>
-    <p>当社はスタートアップのコンサルティング会社であり、プロジェクトの選定、調査、開発、実装などの専門アドバイスを提供する、深い専門知識と経験豊富なアドバイザーのチームで構成されています。</p>
-    <a href="#" class="btn">お問い合わせ</a>
+<!-- SAP风格主横幅 -->
+<section class="sap-hero-banner">
+    <div class="sap-container">
+        <div class="hero-content">
+            <h1>人工知能の力で、<br>ビジネスの未来を変革する</h1>
+            <p class="hero-subtitle">シンドラーコンサルティングは、先進的なAI技術と専門知識を提供し、お客様のビジネス価値を最大化します。</p>
+            <div class="hero-cta">
+                <a href="{{ url_for('products') }}" class="sap-btn primary">製品を探る</a>
+                <a href="#" class="sap-btn secondary">お問い合わせ</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='image/ai_system_premium.svg') }}" alt="AI技術イメージ" class="hero-img">
+        </div>
+    </div>
+</section>
+
+<!-- SAP风格核心价值区 -->
+<section class="sap-value-section">
+    <div class="sap-container">
+        <div class="section-header">
+            <h2>シンドラーコンサルティングの価値提案</h2>
+            <p>人工知能を活用し、企業の生産性と競争力を向上</p>
+        </div>
+        
+        <div class="value-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>専門的なAI開発</h3>
+                <p>日本語に特化した大規模言語モデルの設計と構築から運用まで、一貫した技術基盤を保有</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>スケーラブルなソリューション</h3>
+                <p>異なるデバイス上でモジュールごとの並列推論が可能。リソースを最適活用し、大規模処理にも対応</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>透明性と解釈可能性</h3>
+                <p>モジュール単位でモデル構造を可視化と切り分けられるため、原因究明や改良サイクルを迅速化</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SAP风格服务网格 -->
+<section class="sap-services-section">
+    <div class="sap-container">
+        <div class="section-header">
+            <h2>当社のサービス</h2>
+            <p>ビジネス変革を実現するAIソリューション</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="service-content">
+                    <h3>人工知能システムの受託開発</h3>
+                    <p>お客様のニーズに合わせたAIシステムの設計・開発・実装を行います。独自のモジュール型設計により、柔軟かつスケーラブルなシステム構築が可能です。</p>
+                    <a href="{{ url_for('products') }}" class="service-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="service-content">
+                    <h3>生成型人工知能専用ハードウェアの導入支援</h3>
+                    <p>最適なAIハードウェアの選定から導入までをサポートします。コスト効率とパフォーマンスを最適化し、お客様のビジネスニーズに最適な環境を構築します。</p>
+                    <a href="{{ url_for('products') }}" class="service-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="service-content">
+                    <h3>人工知能人材および企業の移住と合併や買収に関するコンサルティング</h3>
+                    <p>AI人材の獲得や企業のM&Aに関する戦略的アドバイスを提供します。技術評価から文化的統合まで、包括的なサポートを提供します。</p>
+                    <a href="{{ url_for('products') }}" class="service-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SAP风格最新动态 -->
+<section class="sap-news-section">
+    <div class="sap-container">
+        <div class="section-header">
+            <h2>最新情報</h2>
+            <p>シンドラーコンサルティングの最新の成果とニュース</p>
+        </div>
+        
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-card-header">
+                    <span class="news-date"><i class="fas fa-calendar-alt"></i> 2024.4.27</span>
+                </div>
+                <div class="news-card-body">
+                    <h3>新製品「生成AI専用モデル統合システム」プレミアムプランをリリース</h3>
+                    <p>企業向け生成AIソリューションの最上位版となるプレミアムプランを発表。高度なカスタマイズと専門サポートを提供します。</p>
+                    <a href="#" class="news-link">続きを読む <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-card-header">
+                    <span class="news-date"><i class="fas fa-calendar-alt"></i> 2024.4.15</span>
+                </div>
+                <div class="news-card-body">
+                    <h3>第3四半期の事業報告書を公開</h3>
+                    <p>当社の第3四半期の業績が好調を維持。AI導入サービスの需要増加により、前年同期比35%の成長を達成しました。</p>
+                    <a href="#" class="news-link">続きを読む <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-card-header">
+                    <span class="news-date"><i class="fas fa-calendar-alt"></i> 2024.3.28</span>
+                </div>
+                <div class="news-card-body">
+                    <h3>大手製造業向けAIソリューション導入事例公開</h3>
+                    <p>自動車部品メーカーでの生成AI導入により、設計プロセスを40%効率化した事例を公開しました。</p>
+                    <a href="#" class="news-link">続きを読む <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SAP风格客户案例 -->
+<section class="sap-case-section">
+    <div class="sap-container">
+        <div class="section-header">
+            <h2>お客様の成功事例</h2>
+            <p>AIソリューションがもたらす実際のビジネス価値</p>
+        </div>
+        
+        <div class="case-study">
+            <div class="case-content">
+                <blockquote>
+                    「シンドラーコンサルティングのAIソリューションにより、資料作成時間が65%削減され、社内の創造的業務に集中できるようになりました。」
+                </blockquote>
+                <div class="quote-author">
+                    <div class="author-name">山田 健太郎</div>
+                    <div class="author-position">株式会社テックイノベーション 最高技術責任者</div>
+                </div>
+                <div class="case-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">65<span>%</span></div>
+                        <div class="stat-label">業務効率化</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">40<span>%</span></div>
+                        <div class="stat-label">コスト削減</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">3<span>ヶ月</span></div>
+                        <div class="stat-label">導入期間</div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-image">
+                <img src="{{ url_for('static', filename='image/ai_system_standard.svg') }}" alt="導入事例" class="case-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SAP风格CTA区域 -->
+<section class="sap-cta-section">
+    <div class="sap-container">
+        <div class="cta-box">
+            <h2>AI導入についてのご相談はこちら</h2>
+            <p>当社の専門家が、お客様のビジネスに最適なAIソリューションをご提案します。</p>
+            <div class="cta-buttons">
+                <a href="mailto:ai@schindler-jp.com" class="sap-btn primary">お問い合わせ</a>
+                <a href="{{ url_for('products') }}" class="sap-btn secondary">製品を探る</a>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}        

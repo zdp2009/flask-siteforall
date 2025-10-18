@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f0f0f0" rx="10" ry="10"/>
+  
+  <!-- News Icon -->
+  <g transform="translate(400, 200)">
+    <!-- Newspaper Base -->
+    <rect x="-100" y="-80" width="200" height="160" fill="#d9d9d9" rx="5" ry="5" stroke="#999" stroke-width="2"/>
+    
+    <!-- Newspaper Fold -->
+    <path d="M-100,-80 L-85,-65 L-85,80 L-100,80 Z" fill="#bbb"/>
+    
+    <!-- Headline Lines -->
+    <rect x="-75" y="-65" width="150" height="15" fill="#aaa" rx="2" ry="2"/>
+    <rect x="-75" y="-40" width="150" height="7" fill="#aaa" rx="2" ry="2"/>
+    <rect x="-75" y="-25" width="150" height="7" fill="#aaa" rx="2" ry="2"/>
+    
+    <!-- Body Text Lines -->
+    <rect x="-75" y="-5" width="150" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="-75" y="5" width="150" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="-75" y="15" width="150" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="-75" y="25" width="150" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="-75" y="35" width="150" height="5" fill="#ccc" rx="1" ry="1"/>
+    
+    <!-- Image Placeholder -->
+    <rect x="-75" y="50" width="70" height="50" fill="#b0b0b0" rx="3" ry="3"/>
+    <rect x="10" y="50" width="65" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="10" y="60" width="65" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="10" y="70" width="65" height="5" fill="#ccc" rx="1" ry="1"/>
+    <rect x="10" y="80" width="40" height="5" fill="#ccc" rx="1" ry="1"/>
+    
+    <!-- Plus Sign for the image -->
+    <line x1="-45" y1="65" x2="-35" y2="65" stroke="#999" stroke-width="3"/>
+    <line x1="-40" y1="60" x2="-40" y2="70" stroke="#999" stroke-width="3"/>
+  </g>
+  
+  <!-- Text Labels -->
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#777">
+    ニュース記事
+  </text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#999">
+    画像準備中
+  </text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#aaa">
+    最新情報をチェックしてください
+  </text>
+</svg> 

@@ -1,0 +1,38 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="300" y="40" font-family="Arial" font-size="22" text-anchor="middle" fill="#0073aa" font-weight="bold">生成AI（ローカルLLM）専用モデル統合システム</text>
+  <text x="300" y="70" font-family="Arial" font-size="18" text-anchor="middle" fill="#555">スタンダードプラン - システム構成</text>
+  
+  <!-- AI核心 -->
+  <rect x="220" y="120" width="160" height="90" rx="10" ry="10" fill="#0073aa" stroke="#005580" stroke-width="2"/>
+  <text x="300" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">ローカルLLM</text>
+  <text x="300" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="white">コアAIエンジン</text>
+  
+  <!-- 用户界面 -->
+  <rect x="70" y="120" width="120" height="90" rx="10" ry="10" fill="#46b450" stroke="#339933" stroke-width="2"/>
+  <text x="130" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">ユーザーUI</text>
+  <text x="130" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="white">入力&操作インタフェース</text>
+  
+  <!-- API -->
+  <rect x="410" y="120" width="120" height="90" rx="10" ry="10" fill="#ff9e2c" stroke="#e67e00" stroke-width="2"/>
+  <text x="470" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">API接続</text>
+  <text x="470" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="white">外部システム連携</text>
+  
+  <!-- 数据库 -->
+  <rect x="220" y="240" width="160" height="90" rx="10" ry="10" fill="#00a0d2" stroke="#0073aa" stroke-width="2"/>
+  <text x="300" y="290" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">データベース</text>
+  <text x="300" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="white">資料・設定保存</text>
+  
+  <!-- 连接线 -->
+  <line x1="190" y1="165" x2="220" y2="165" stroke="#666" stroke-width="2"/>
+  <line x1="380" y1="165" x2="410" y2="165" stroke="#666" stroke-width="2"/>
+  <line x1="300" y1="210" x2="300" y2="240" stroke="#666" stroke-width="2"/>
+  
+  <!-- 箭头 -->
+  <polygon points="218,165 210,160 210,170" fill="#666"/>
+  <polygon points="408,165 400,160 400,170" fill="#666"/>
+  <polygon points="300,238 295,230 305,230" fill="#666"/>
+</svg> 
